@@ -1,0 +1,213 @@
+/*Global Settings*/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    background-color: #fff8ef;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #e05d5d;
+    background-color: #ffb344;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+    width: auto;
+}
+
+h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #00a19d;
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: underline;
+    width: auto;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #00a19d;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*Navigation Bar*/
+
+.navback {
+    background-color: #ffb344;
+    padding:2rem 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    margin-top: -8rem;
+}
+
+.navbar {
+    background-color: #ffb344;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navli {
+    text-decoration: none;
+    background-color: #00a19d;
+    color: #ffb344;
+    padding: 1rem;
+}
+
+.navli:hover {
+    background-color: #e05d5d;
+    color: #00a19d;
+}
+
+
+/* Run, Ride & Swim */
+
+ul .gridarea{
+    text-align: center;
+}
+
+.gridarea {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5rem 5rem 5rem;
+    border: 0.25rem solid #00a19d;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: palevioletred;
+}
+
+.griditeml {
+    border-bottom: 0.25rem solid #00a19d;
+    border-right: 0.25rem solid #00a19d;
+}
+
+.griditemr {
+    border-bottom: 0.25rem solid #00a19d;
+}
+
+.griditemb {
+    border-right: 0.25rem solid #00a19d;
+}
+
+.pad {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.images {
+    margin-left: 4.3rem;
+    margin-right: 4.3rem;
+}
+
+.images li {
+    display: inline;
+}
+
+img {
+    width: 25rem;
+    height: 20rem;
+    border: 4px solid #ffb344;
+}
+
+@media only screen and (max-width: 1100px) {
+    .gridarea {
+        grid-template-columns: 100%;
+        grid-template-rows: 5rem 5rem 5rem 5rem 5rem 5rem;
+    }
+
+    .griditeml{
+        border-right: none;
+    }
+
+    .griditemb {
+        border-bottom: 0.25rem solid #00a19d;
+        border-right: none;
+    }
+    .images {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    img {
+        width: 22.5rem;
+        height: 17.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 965px) {
+    .gridarea {
+        grid-template-columns: 100%;
+        grid-template-rows: 7rem 7rem 7rem 7rem 7rem 7rem;
+    }
+    .images li {
+        display: block;
+    }
+    .images {
+        margin-left: 20rem;
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 760px) {
+    .gridarea {
+        width: 20rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem;
+        margin-left: 14rem;
+    }
+    .images {
+        margin-left: 13rem;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .gridarea {
+        margin-left: 7rem;
+    }
+    .images {
+        margin-top: 1rem;
+    }
+    .navbar li {
+        display: block;
+        margin-top: 3rem;
+        background-color: #ffb344;
+    }
+    .navback {
+        position: static;
+        margin-top: 0;
+    }
+    .images {
+        margin-left: 5.5rem;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
